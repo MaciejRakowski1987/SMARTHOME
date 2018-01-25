@@ -1,0 +1,113 @@
+@import 'misc';
+
+
+@include respond-to(mobile) {
+  .header {
+    display: none;
+  }
+
+  .mobileNav {
+    display: inline-block;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    z-index: 100;
+  }
+
+  .mobileNav__logo {
+    width: 50px;
+    height: 50px;
+  }
+
+  .mobileNav__nav {
+    background-color: rgba(74, 183, 71, 0.85);
+    display: none;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+  }
+
+  .mobileNav__nav-item {
+    color: #fff;
+    display: block;
+    font-size: 20px;
+    font-weight: 500;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+    text-decoration: none; 
+    width: 100%;
+
+    &:focus, &:active {
+      background-color: rgba(255, 255, 255, 0.15);
+      outline: none;
+    }
+
+    &.mobileNav__nav-item--menu {
+      background-color: rgba(0, 0, 0, 0.15);
+      text-transform: uppercase;
+    }
+  }
+
+.mobileNav__certificates--gallery {
+  display: none;
+}
+
+  .mobileNav__img {
+    display: none;
+  }
+
+  .transparentBox__column {
+    float: left;
+    padding: 50px 0px 50px 0px;
+    width: 100%;
+  }
+
+  .main__heading {
+      color: rgba(255, 255, 255, 0.73);
+      font-size: 100px;
+      font-size: 11.2vw;  /*font size responsive by "VW"*/
+      font-weight: 600;
+      margin-bottom: 29px;
+      margin-top: 0;
+    }
+
+  .gallery__container {
+    background: 0px;
+    height:auto;
+    width: 100%;
+  }
+  .gallery__img img {
+    opacity: 1;
+    width: 49%
+  }
+
+.company__info {
+  background-color: rgba(255, 255, 255, 0.85);
+  border-radius: 10px;
+  color: #000;
+  line-height: 1.35;
+  margin: 80px 0px 70px 0px;
+  padding: 0px 5px 5px 5px;
+}
+
+.company__infoLine {
+  display: block;
+  font-size: 15px;
+  padding: 0px 2px;
+}
+
+  .contact__info {
+  height: auto;
+  width: 100%;
+  }
+
+  .contact__infoLine {
+    font-size: 4.4vw;
+  }
+}

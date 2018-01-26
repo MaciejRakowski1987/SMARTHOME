@@ -23,23 +23,20 @@ $(document).ready(function() {
   $('.main').addClass('fadeIn');
 });
 
-$(document).ready(function() {
-  $("#lightgallery").lightGallery();
-});
-
-$(document).ready(function(){
-  $('.btn__main').mouseover(function(){
-    $('.main__heading').addClass('main__heading--highlighted');
-  });
-
-  $('.btn__main').mouseleave(function(){
-    $('.main__heading').removeClass('main__heading--highlighted');
-  });
-});
-
-
 $(document).ready(function(){
     $(".mobileNav").click(function(){
         $(".mobileNav__nav").slideToggle();
     });
 });
+
+function initMap() {
+  var uluru = {lat: 53.4387859, lng: 14.562607299999968};
+  var map = new google.maps.Map(document.getElementById('map'), {
+    zoom: 14,
+    center: uluru
+  });
+  var marker = new google.maps.Marker({
+    position: uluru,
+    map: map
+  });
+}

@@ -12,6 +12,7 @@
 //   position: relative;
 // }
 
+
 .header {
   padding-top: 20px;
   background-color: #FAFAFA;
@@ -134,7 +135,6 @@
 //   }
 // }
 
-
 .mobileNav__nav {
   display: none;
 }
@@ -211,6 +211,7 @@
 }
 
 .nav__phone {
+  background: rgba(0,0,0,0.06);
   float: right;
   padding: 0 10px;
   height: 50px;
@@ -228,6 +229,7 @@
     }
   }
 }
+
 .navbar {
   border: none;
 }
@@ -254,15 +256,14 @@
   margin: 50px auto;
   padding: 20px;
   // background: #f5f5
-}
 
-.certificates img {
-  display: inline-block;
-  max-height: 120px;
-  margin-left: 10px;
-  margin-right: 10px;
+   img {
+    display: inline-block;
+    max-height: 120px;
+    margin-left: 10px;
+    margin-right: 10px;
+   }
 }
-
 
 .main {
   padding-top: 40px;

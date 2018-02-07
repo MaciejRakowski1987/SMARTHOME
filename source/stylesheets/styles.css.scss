@@ -13,6 +13,7 @@
 // }
 
 
+
 .header {
   padding-top: 20px;
   background-color: #FAFAFA;
@@ -326,6 +327,30 @@
 .contact {
   z-index: 1;
   position: relative;
+}
+
+#contact .well{
+    margin-top:30px;
+
+}
+
+#contact .form-control{
+  border:1px solid #1e1e1e;
+}
+
+#contact button{
+  border:1px solid #1e1e1e;
+}
+
+#contact .row{
+  margin-bottom:30px;
+}
+
+@media (max-width: 768px) { 
+    #contact iframe {
+        margin-bottom: 15px;
+    }
+    
 }
 
 .link {

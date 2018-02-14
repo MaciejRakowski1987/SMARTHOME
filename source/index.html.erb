@@ -186,14 +186,14 @@ title: SMARTHOME
 		  </div>
   	</div>
   </section>
-<section id="contact">
+<!-- <section id="contact">
   <div class="container">
     <div class="well well-sm">
       <div class="contact">
         <h2>Skontaktuj sie z nami: <large><a class="link" href="tel:+48 698 151 212">+48 698 151 212</large></a></h2>
       </div>
     </div>
-  
+
   <div class="row">
     <div class="col-md-7">
         <iframe src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJq6kO8W0JqkcRYmDWQ_VpI4g&key=AIzaSyDhK3ocozWrvj-9xOaTGjAQc1OJ5ut-Iqg" width="100%" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
@@ -217,57 +217,43 @@ title: SMARTHOME
       </div>
     </div>
   </div>
-</section>
-<!--   <section class="contact">
+</section> -->
+  <section id="contact" class="contact">
     <div id="map"></div>
-    <div class="container">
-      <div class="contact">
-        <h2>Skontaktuj sie z nami: <large><a class="link" href="tel:+48 698 151 212">+48 698 151 212</large></a></h2>
-      </div>
-        <div class="row">
-          <div class="col-lg-6" id="contact">
-            <p>Wyślij nam wiadomość</p>
-            <address class="bubble">
-              <strong><a class="link" href="mailto:bartek@smarthome.net.pl" target="_top">bartek@smarthome.net.pl</a></strong></br>
-              ul. Raginisa 13/14</br>
-              71-625 Szczecin</br>
-              NIP: 852-243-29-78</br>
-              REGON: 320325826
-            </address>
-          </div>
-          <div class="col-lg-6 bubblee">
-            <form action="https://formspree.io/m.rakowski1987@gmail.com" method="post" class="form-horizontal">
-              <div class="form-group">
-                <label for="user-name" class="col-lg-2 control-label">Imię</label>
-                <div class="col-lg-10">
-                  <input name="name" type="text" class="form-control" id="user-name" placeholder="Wpisz swoje imię/nazwę firmy">
-                </div>
-              </div>
-              <div class="form-group">
-                <label for="user-email" class="col-lg-2 control-label">Email</label>
-                <div class="col-lg-10">
-                  <input name="email" type="email" class="form-control" id="user-email" placeholder="Wpisz swój Email">
-                </div>
-              </div>
-              <div class="form-group">
-                <label for="user-message" class="col-lg-2 control-label">Wiadomość</label>
-                <div class="col-lg-10">
-                  <textarea name="user-message" id="user-message" class="form-control"
-                  cols="20" rows="10" placeholder="Wpisz swoją wiadomość"></textarea>
-                </div>
-              </div>
-              <div class="form-group">
-                <div class="col-lg-10 col-lg-offset-2">
-                  <button type="submit" class="btn btn-success">Wyślij</button>
-                </div>
-              </div>
-            </form>
-          </div>
-        </div>
+    <div class="contact__bottomBar">
+      <i class="fas fa-map-marker-alt fa-md"></i> ul. Raginisa 13/14, 71-625 Szczecin
     </div>
-  </section> -->
+    <div class="contact__form">
+      <div class="button">
+        <i class="fas fa-phone-square fa-lg"></i><a class="link" href="tel:+48 698 151 212">(+48) 698 151 212</a>
+      </div>
+      <div class="contact__separator"></div>
+      <div class="button">
+        <i class="fas fa-envelope-square fa-lg"></i><a class="link" href="mailto:bartek@smarthome.net.pl" target="_top">bartek@smarthome.net.pl</a>
+      </div>
+      <div class="contact__separator"></div>
+      <form action="https://formspree.io/m.rakowski1987@gmail.com" method="post" class="form-horizontal">
+        <h4>Napisz do nas</h4>
+        <div class="form-group">
+          <label for="user-name" class="control-label">Imię</label>
+          <input name="name" type="text" class="form-control" id="user-name" placeholder="Wpisz swoje imię/nazwę firmy">
+        </div>
+        <div class="form-group">
+          <label for="user-email" class="control-label">Email</label>
+          <input name="email" type="email" class="form-control" id="user-email" placeholder="Wpisz swój Email">
+        </div>
+        <div class="form-group">
+          <label for="user-message" class="control-label">Wiadomość</label>
+          <textarea name="user-message" id="user-message" class="form-control"></textarea>
+        </div>
+        <div class="form-group">
+          <button type="submit" class="btn btn-success">Wyślij</button>
+        </div>
+      </form>
+    </div>
+  </section>
   <footer>
-    <a class="facebookIcon" href="http://www.facebook.com"><i class="fab fa-2x fa-facebook-square"></i></a>
+    <a class="facebookIcon" href="http://www.facebook.com"><i class="fab fa-lg fa-facebook-square"></i></a>
     <span><span class="companyName">SMARTHOME</span> © 2018. Wszelkie prawa zastrzeżone.</span>
   </footer>
 </body>

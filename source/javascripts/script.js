@@ -105,44 +105,12 @@ function initMap() {
   });
 }
 
-function getDataFromAPI() {
-  $('#dataButton').on('click', function(){
 
-    $(this).text('loading...').css({'opacity': '0.5', 'pointer-events': 'none'})
-
-    $.ajax({
-      url: 'http://5a74c66b08118e0012fd4c9a.mockapi.io/raku/cars',
-      data: {},
-      type: 'GET',
-      success: function(data) {
-        onRequestSuccess(data)
-        $('#dataButton').text('button').css({'opacity': '1', 'pointer-events': 'initial'})
-      },
-      error: function(JqXHR, textStatus, errorThrown) {
-        onRequestError(errorThrown);
-        $('#dataButton').text('button').css({'opacity': '1', 'pointer-events': 'initial'})
-      }
-    })
-  })
-}
-
-function onRequestError(error) {
-  alert(error)
-}
-
-function onRequestSuccess(data) {
-  $('#dataItems').html('');
-  $.each(data, function(index, car) {
-    var itemTemplate = '<div>Model: ' + car.model + '<br/>Engine: ' + car.engine + '<br/><br/></div>';
-    $('#dataItems').append(itemTemplate);
-  })
-}
 
 $(document).ready(function(){
   highlightButtonOnDropdownActive();
   animateScrollToSection();
   highlightNavigationLinks();
-  getDataFromAPI();
 });
 
 
